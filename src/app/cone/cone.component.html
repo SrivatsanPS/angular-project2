@@ -1,0 +1,6 @@
+<div class="container" >
+  <input type="text" #value>
+  <button type="button" (click)="enterData(value)">enter</button>
+  <p *ngFor = "let i of content" #gh>{{i}} <button (click) = "func(gh)">del</button></p>
+</div>
+
